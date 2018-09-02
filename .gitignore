@@ -1,0 +1,4 @@
+detect_images/
+*.h5
+*.npy
+.DS_Store
