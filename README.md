@@ -31,6 +31,23 @@ python3 face_predict.py <target_image_file>
 
 
 
+## Docker
+
+Can execute predict processing in Docker.
+
+(Please execute after learning)
+
+```
+# image build
+docker build -t face-predict-py .
+
+# connect docker
+docker run -it --rm --name face-predict face-predict-py /bin/bash
+python face_predict.py <target_image_file>
+```
+
+
+
 ## config
 
 config write constant in `faces_cnn.py`.
